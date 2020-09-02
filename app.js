@@ -101,9 +101,10 @@ app.get("/opportunities/:id", function(req, res){
   });
 });
 
-app.listen((3000), function(req,res){
+app.listen((process.env.PORT || 3000), function(req,res){
   console.log("Wics Site has started");
 });
+
 
 
    
