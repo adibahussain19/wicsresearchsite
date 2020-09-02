@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+
+<div class="container">
+
+    <div class="title"><%=opportunity.title%></div>
+    <div class= "item">
+        <div class=content>            
+            <div class= "description">
+                <p><%- opportunity.description%></p>
+
+                <p class="requirements">Requirements:</p>
+                
+                <ul>
+                    <% opportunity.requirements.forEach(function(requirement){ %>
+                        <li> <%-requirement%></li>
+                    <% }); %>
+                </ul>
+                
+                <p class= "application-details"> How to Apply: </p>
+                <p><%- opportunity.details%></p>
+            </div>
+    
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<%- include("partials/footer") %>

@@ -1,0 +1,38 @@
+<%- include("partials/header") %>
+
+<div class="container">
+
+    <h2>Professor/Lab Research Opportunities </h2>
+
+    <% opportunities.forEach(function(opportunity){ %>
+        <div class="title"><%=opportunity.title%></div>
+
+        <div class= "item">
+            <div class=content>
+                <div class= "description">
+                    <p><%- opportunity.description.substring(0,250)%>....</p>
+                </div>
+
+                <div class= "extra">
+                    <a class="ui basic blue button" href="/opportunities/<%= opportunity._id %>">
+                        Read More <i class="right chevron icon"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+        <% }); %>
+
+    <div class="title">Additional Resources</div>
+
+    <% resources.forEach(function(resource){ %>
+        <div class="resource">
+            <a href="<%= resource.link %>"><%= resource.title %></a>
+        </div>
+    <% }); %>
+</div>
+
+
+<%- include("partials/footer") %>

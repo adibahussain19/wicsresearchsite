@@ -1,0 +1,79 @@
+.navbar.navbar-inverse.navbar-fixed-top {
+    padding: 10px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: white; 
+    text-transform: uppercase;
+}
+
+.navbar-brand.js-scroll-trigger {
+	color: #7cbcec !important;
+	font-size: 1.5em;
+	padding-bottom: .5em;
+}
+
+#brand {
+	font-family: choplin !important;
+}
+
+a:hover {
+	color: #7cbcec !important;
+}
+
+h2 {
+	padding-top: 10px;
+	color: #313338;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+.description {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.title {
+	color: #597d9c;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.resource {
+	padding-bottom: 10px;
+}
+
+.requirements, .application-details {
+	color: #597d9c;
+	font-size: 1.1em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+
+body { 
+	padding-top: 70px; 
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	color: #50565c;
+}
+
+.icon-custom{
+	background: url('wics_logo_small.ico');
+	width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+
