@@ -1,8 +1,10 @@
 <%- include("partials/header") %>
 
 <div class="container">
-
+    
     <h2>Professor/Lab Research Opportunities </h2>
+
+    <p>The following opportunities are for the Fall 2020 semester. If you have any questions concerning a research opportunity, contact the professor leading the project. </p>
 
     <% opportunities.forEach(function(opportunity){ %>
         <div class="title"><%=opportunity.title%></div>
@@ -25,7 +27,7 @@
         <hr>
         <% }); %>
 
-    <div class="title">Additional Resources</div>
+    <div class="title" section id="resources">Additional Resources</div>
 
     <% resources.forEach(function(resource){ %>
         <div class="resource">

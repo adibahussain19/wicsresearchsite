@@ -5,8 +5,9 @@ var express                 = require("express"),
     methodOverride          = require("method-override"),
     flash                   = require("connect-flash");
 
-mongoose.connect('mongodb://localhost:27017/wics_site', {
+mongoose.connect(process.env.DATABASEURL, {
   useNewUrlParser: true,
+  useCreateIndex: true,
   useUnifiedTopology: true,
   useFindAndModify: false
 })
